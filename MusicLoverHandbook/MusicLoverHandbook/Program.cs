@@ -12,6 +12,9 @@ namespace MusicLoverHandbook
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
+        //14.	Справочник меломана. База групп и исполнителей; база песен; база дисков 
+        //с перечнем песен (в виде ссылок). Выбор всех песен заданной группы; всех дисков, 
+        //где встречается заданная песня.
         static void Main()
         {
             Application.EnableVisualStyles();
