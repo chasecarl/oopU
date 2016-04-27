@@ -15,8 +15,7 @@ namespace MusicLoverHandbook
     {
         String forsearch;
 
-        String[] defaultSongsCollection;
-        String[] defaultGroupsCollection;
+        List<String> defaultSongsCollection, defaultGroupsCollection;
         
         TextReader songsReader;
         TextReader groupsReader;
@@ -26,11 +25,11 @@ namespace MusicLoverHandbook
             InitializeComponent();
 
             songsReader = new StreamReader("songs.txt");
-            defaultSongsCollection = new String[getLines(songsReader)];
+            defaultSongsCollection = new List<String>();
             Read(songsReader, defaultSongsCollection);
 
             groupsReader = new StreamReader("groups.txt");
-            defaultGroupsCollection = new String[getLines(groupsReader)];
+            defaultGroupsCollection = new List<String>();
             Read(groupsReader, defaultGroupsCollection);
 
             MessageBox.Show(defaultSongsCollection[0]);
@@ -48,26 +47,13 @@ namespace MusicLoverHandbook
             return "There is no such a song";
         }
 
-        public void Read(TextReader reader, String[] col)
+        public void Read(TextReader reader, List<String> col)
         {
             String line;
-            int i = 0;
             while ((line = reader.ReadLine()) != null)
             {
-                col[i] = line;
-                i++;
+                col.Add(line);
             }
-        }
-
-        public int getLines(TextReader reader)
-        {
-            String line;
-            int count = 0;
-            while ((line = reader.ReadLine()) != null)
-            {
-                count++;
-            }
-            return count;
         }
 
         private void searchButton_Click(object sender, EventArgs e)
