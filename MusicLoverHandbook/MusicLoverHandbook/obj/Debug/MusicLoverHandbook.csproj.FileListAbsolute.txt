@@ -1,1 +1,9 @@
 D:\Курс\MusicLoverHandbook\MusicLoverHandbook\bin\Debug\MusicLoverHandbook.exe.config
+D:\Курс\MusicLoverHandbook\MusicLoverHandbook\bin\Debug\MusicLoverHandbook.exe
+D:\Курс\MusicLoverHandbook\MusicLoverHandbook\bin\Debug\MusicLoverHandbook.pdb
+D:\Курс\MusicLoverHandbook\MusicLoverHandbook\obj\Debug\MusicLoverHandbook.csprojResolveAssemblyReference.cache
+D:\Курс\MusicLoverHandbook\MusicLoverHandbook\obj\Debug\MusicLoverHandbook.Form1.resources
+D:\Курс\MusicLoverHandbook\MusicLoverHandbook\obj\Debug\MusicLoverHandbook.Properties.Resources.resources
+D:\Курс\MusicLoverHandbook\MusicLoverHandbook\obj\Debug\MusicLoverHandbook.csproj.GenerateResource.Cache
+D:\Курс\MusicLoverHandbook\MusicLoverHandbook\obj\Debug\MusicLoverHandbook.exe
+D:\Курс\MusicLoverHandbook\MusicLoverHandbook\obj\Debug\MusicLoverHandbook.pdb
