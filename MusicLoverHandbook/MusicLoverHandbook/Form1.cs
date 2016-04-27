@@ -32,7 +32,7 @@ namespace MusicLoverHandbook
             defaultGroupsCollection = new List<String>();
             Read(groupsReader, defaultGroupsCollection);
 
-            MessageBox.Show(defaultSongsCollection[0]);
+            MessageBox.Show(defaultSongsCollection[0]);//for checking
         }
 
         public String Search(String[] file)
