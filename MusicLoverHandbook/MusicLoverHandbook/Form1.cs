@@ -32,7 +32,14 @@ namespace MusicLoverHandbook
             defaultGroupsCollection = new List<String>();
             Read(groupsReader, defaultGroupsCollection);
 
-            MessageBox.Show(defaultSongsCollection[0]);//for checking
+            Visualize();
+
+            MessageBox.Show(defaultGroupsCollection[0] + "\n" + defaultSongsCollection[0], "Check");//for checking
+        }
+
+        public void Visualize()
+        {
+            
         }
 
         public String Search(String[] file)
@@ -55,10 +62,11 @@ namespace MusicLoverHandbook
                 col.Add(line);
             }
         }
-
+        
         private void searchButton_Click(object sender, EventArgs e)
         {
             forsearch = searchBox.Text;
+
         }
     }
 }
