@@ -62,7 +62,55 @@ namespace MusicLoverHandbook
                 col.Add(line);
             }
         }
-        
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void searchBox_Enter(object sender, EventArgs e)
+        {
+            if (searchBox.Text == "Type in a song name...")
+            {
+                searchBox.ForeColor = Color.Black;
+                searchBox.Text = "";
+            }
+        }
+
+        private void searchBox_Leave(object sender, EventArgs e)
+        {
+            if (searchBox.Text == "")
+            {
+                searchBox.ForeColor = Color.Gray;
+                searchBox.Text = "Type in a song name...";
+            }
+        }
+
+        private void inputGroupName_Enter(object sender, EventArgs e)
+        {
+            if (inputGroupName.Text == "Type in a group name...")
+            {
+                inputGroupName.ForeColor = Color.Black;
+                inputGroupName.Text = "";
+            }
+        }
+
+        private void inputSongName_Leave(object sender, EventArgs e)
+        {
+            if (inputSongName.Text == "")
+            {
+                inputSongName.ForeColor = Color.Gray;
+                inputSongName.Text = "Type in a song name...";
+            }
+        }
+
+        public void choosePlaylistToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Dialog = new OpenFileDialog();
+            Dialog.ShowDialog();
+            StreamReader inside = new StreamReader(Dialog.FileName);
+        }
+
         private void searchButton_Click(object sender, EventArgs e)
         {
             forsearch = searchBox.Text;
